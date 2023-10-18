@@ -115,6 +115,7 @@ class ExportToWord {
 	private static function htmlEntities($html) {
 		// Get images from html and receiving their data for embeding
 		$imagesData = '';
+		$imagesNames = '';
 		preg_match_all('/<img\s*(.*?)\s*src\s*=\s*"(.+?)"(.*?)>/u', $html, $matches);
 		$i = 0;
 		foreach($matches[0] as $imgTag) {
