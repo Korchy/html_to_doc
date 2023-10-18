@@ -135,7 +135,7 @@ class ExportToWord {
 			$imageDesc = '
 				<v:imagedata src="images/'.$imageName.'" o:href=""/>
 				</v:shape><![endif]--><![if !vml]><span style="mso-ignore:vglayout"><img border=3D0 src="images/'.$imageName.'"
-				alt=3DHaut v:shapes="_x0000_i1057" '.$matches[2][$i].' '.$matches[3][$i].'></span><![endif]>';
+				alt=3DHaut v:shapes="_x0000_i1057" '.$matches[2][$i].' '.$matches[1][$i].' '.$matches[3][$i].'></span><![endif]>';
 			$html = mb_ereg_replace($imgTag, $imageDesc, $html);
 			$i++;
 		}
